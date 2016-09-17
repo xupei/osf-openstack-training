@@ -49,7 +49,10 @@ devstack 的安装不能直接用root 用户，新建一个用户stack
 	su - stack
 	git clone  https://github.com/openstack-dev/devstack.git
 	su - root
-	cd /home/stack/devstack/tools/create-stack-user.sh 
+	cd /home/stack/devstack/tools
+	# 创建stack用户运行
+	# 之前的创建stack步骤应该不需要（未尝试）
+	./create-stack-user.sh
 
 如果你的环境需要设置代理，请添加http Proxy (可选)
 
